@@ -3,6 +3,7 @@
 ---
 
 Sommaire:
+
 - Introduction
 - Hello world
 - Composants dynamiques et réutilisables
@@ -178,7 +179,7 @@ module.exports = {
   // the app entry point is /src/index.js
   entry: path.resolve(__dirname, 'src', 'index.js'),
   output: {
-  	// the output of the webpack build will be in /dist directory
+   // the output of the webpack build will be in /dist directory
     path: path.resolve(__dirname, 'dist'),
     // the filename of the JS bundle will be bundle.js
     filename: 'bundle.js'
@@ -186,7 +187,7 @@ module.exports = {
   module: {
     rules: [
       {
-      	// for any file with a suffix of js or jsx
+       // for any file with a suffix of js or jsx
         test: /\.jsx?$/,
         // ignore transpiling JavaScript from node_modules as it should be that state
         exclude: /node_modules/,
@@ -317,11 +318,12 @@ ReactDOM.render(React.createElement(HelloWorld), document.querySelector('#root')
 
 ---
 
-### You turn !
+### You turn
 
 ----
 
 À partir de notre hello world, enrichissez le code pour ajouter ces fonctionnalités:
+
 - Changer le "Hello World!" en "Hello \<your_name\>!" (ex: "Hello Nicolas!" en dur pas encore en dynamique 😉)
 - Mettre le prénom en gras à l'aide d'une balise `<strong>`
 - Ajouter d'autres élements HTML à l'intérieur de la `div` et en dessous de la string "Hello \<your_name\>!"
@@ -747,6 +749,7 @@ Dans la fonction onClick, nous basculons l'état isLit vrai/faux en fonction de 
 ----
 
 La fonction setIsLit a deux tâches:
+
 - d'abord, elle change l'État
 - puis elle re-render le composant
 
@@ -792,6 +795,7 @@ You turn !
 ---
 
 On a vu:
+
 - la création d'un composant
 - le passage de props pour rendre customisable un composant
 - la gestion d'état pour rendre dynamique un composant
@@ -1069,3 +1073,8 @@ Il s'agit d'un exemple avec Surge mais il existe beaucoup d'autres plateformes d
 > Google is your friend 😉
 
 ---
+
+### Deployer sur Heroku
+
+----
+ [Let's play](https://dashboard.heroku.com/)
